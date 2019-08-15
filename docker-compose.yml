@@ -1,0 +1,17 @@
+version: "3"
+services:
+  active-mq:
+    image: rmohr/activemq:5.14.5
+    ports:
+      - "61616:61616"
+      - "8161:8161"
+  app:
+    image: gcr.io/distroless/java:8
+    environment:
+      spring_profiles_active: dev
+      spring_activemq_broker-url: 'tcp://active-mq:61616'
+    ports:
+      - "8080:8080"
+    volumes:
+      - ${PWD}/build/libs/hello.jms-0.0.1-SNAPSHOT.jar:/app.jar
+    command: ["/app.jar"]
