@@ -6,7 +6,9 @@ services:
       - "61616:61616"
       - "8161:8161"
   app:
-    image: gcr.io/distroless/java:8
+    # image: gcr.io/distroless/java:8
+    build:
+      context: .
     environment:
       spring_profiles_active: dev
       spring_activemq_broker-url: 'tcp://active-mq:61616'
