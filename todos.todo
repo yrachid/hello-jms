@@ -4,6 +4,9 @@
     - [ ] Verify it from the publisher perspective
     - [ ] Verify it from the consumer perspective, exercising the Receiver component
       - [ ] Is it possible to control the broker? How to simulate a message "push" so that the receiver can be exercised?
+    - [ ] Create an e2e gradle module that tests the queue from a user perspective
+      - [ ] Use it to test the queue via docker compose. Perhaps interact with the broker directly
+      - [ ] Also serves as a reasonable excuse for distroless.
   - [X] Add it to test dependencies
   - [X] Set up a minimal test
   - [X] Add functional package to gradle test task (gradle figured it out by itself)
