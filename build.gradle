@@ -1,39 +1,8 @@
 plugins {
-    id 'org.springframework.boot' version '2.1.7.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
     id 'java'
 }
-
-group = 'com.example'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
 
 repositories {
     mavenCentral()
 }
 
-ext {
-    lombok = "org.projectlombok:lombok:1.16.18"
-}
-
-dependencies {
-    annotationProcessor(
-        lombok
-    )
-
-    implementation(
-        lombok,
-        "org.springframework.boot:spring-boot-starter-activemq",
-        "org.springframework.boot:spring-boot-starter-web"
-    )
-
-    testAnnotationProcessor(
-        lombok
-    )
-
-    testImplementation(
-        "org.springframework.boot:spring-boot-starter-test",
-        "io.rest-assured:rest-assured:3.3.0",
-        "io.rest-assured:json-schema-validator:3.3.0"
-    )
-}

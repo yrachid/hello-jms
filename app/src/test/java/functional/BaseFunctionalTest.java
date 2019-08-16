@@ -15,14 +15,14 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT, classes = TweetPublishingTest.TestConfig.class)
-public class BaseFunctionalTest {
+public abstract class BaseFunctionalTest {
 
     @LocalServerPort
     protected int port;
 
     @Configuration
     @EnableAutoConfiguration
-    @ComponentScan("com.example.hello.jms")
+    @ComponentScan({"com.example.hello.jms", "functional"})
     public static class TestConfig {
     }
 

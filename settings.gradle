@@ -1,1 +1,3 @@
 rootProject.name = 'hello.jms'
+include 'app'
+
