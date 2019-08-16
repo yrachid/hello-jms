@@ -1,6 +1,9 @@
 
 - [ ] RestAssuredAdd Restassured to Gradle dependencies
   - [ ] Exercise the queue
+    - [ ] Verify it from the publisher perspective
+    - [ ] Verify it from the consumer perspective, exercising the Receiver component
+      - [ ] Is it possible to control the broker? How to simulate a message "push" so that the receiver can be exercised?
   - [X] Add it to test dependencies
   - [X] Set up a minimal test
   - [X] Add functional package to gradle test task (gradle figured it out by itself)
