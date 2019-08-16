@@ -1,0 +1,6 @@
+
+- [ ] RestAssuredAdd Restassured to Gradle dependencies
+  - [ ] Exercise the queue
+  - [X] Add it to test dependencies
+  - [X] Set up a minimal test
+  - [X] Add functional package to gradle test task (gradle figured it out by itself)

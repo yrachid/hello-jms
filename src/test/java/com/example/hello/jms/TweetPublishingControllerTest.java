@@ -14,6 +14,7 @@ public class TweetPublishingControllerTest {
 
     @Mock
     private JmsTemplate template;
+
     private TweetPublishingController controller;
 
     @Before

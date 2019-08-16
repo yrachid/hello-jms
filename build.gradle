@@ -33,7 +33,7 @@ dependencies {
 
     testImplementation(
         "org.springframework.boot:spring-boot-starter-test",
-        "io.rest-assured:rest-assured:3.3.0"
+        "io.rest-assured:rest-assured:3.3.0",
+        "io.rest-assured:json-schema-validator:3.3.0"
     )
-
 }
