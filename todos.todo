@@ -1,5 +1,5 @@
 
-- [ ] RestAssuredAdd Restassured to Gradle dependencies
+- [ ] RestAssured
   - [ ] Exercise the queue
     - [ ] Verify it from the publisher perspective
     - [ ] Verify it from the consumer perspective, exercising the Receiver component
